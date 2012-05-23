@@ -28,9 +28,7 @@
 <meta property="og:image" content="" />
 */ ?>
 
-<? /*
-<link rel="shortcut icon" href="/favicon.ico" />
-*/ ?>
+<? /* <link rel="shortcut icon" href="/favicon.ico" /> */ ?>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <!-- ::::::::::::::::::::::::::: MODERNIZR ::::::::::::::::::::::::::: -->
 <? // html5shiv included by default and is required. Create custom build if additional features are needed. http://modernizr.com/ ?>
