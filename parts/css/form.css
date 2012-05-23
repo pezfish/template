@@ -1,0 +1,15 @@
+select, input, textarea, button{font:99% sans-serif; vertical-align: baseline; *vertical-align: middle;}
+input, textarea, select{width:100%; resize:none; border:0; background:#ccc; padding:5px; vertical-align:middle; margin:0;}
+button, input{line-height:normal;}
+input[type="search"]{-webkit-appearance:textfield; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box;}
+input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
+input[type="radio"]{vertical-align:text-bottom; border:none;}
+button{width:auto; overflow:visible; cursor:pointer; margin:0;}
+button::-moz-focus-inner, input::-moz-focus-inner {border: 0; padding: 0;}
+textarea{overflow:auto; vertical-align:top; resize:vertical;}
+select{vertical-align:middle; margin:0;}
+label{cursor:pointer;}
+legend{border:0; *margin-left:-7px; padding:0;}
+.radio, .checkbox{box-sizing:border-box; padding:0; border:none; width:auto;}
+.button{cursor:pointer; *overflow:visible; width:auto;}
+.captcha{width:120px; height:35px; text-align:center; text-transform:lowercase; font-weight:bold; font-size:24px; padding-top:10px;}
