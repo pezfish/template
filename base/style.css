@@ -35,7 +35,7 @@ legend{border:0; *margin-left:-7px; padding:0;}
 .radio, .checkbox{box-sizing:border-box; padding:0; border:none; width:auto;}
 .button{cursor:pointer; *overflow:visible; width:auto;}
 .captcha{width:120px; height:35px; text-align:center; text-transform:lowercase; font-weight:bold; font-size:24px; padding-top:10px;}
-/*----END FORMS ---*/
+/*---- END FORMS ---*/
 
 /*---- LAYOUT ---*/
 /* ::-moz-selection{background:#369; color:#fff; text-shadow:none;}
