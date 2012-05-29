@@ -95,7 +95,7 @@
                     <option value="11 PM">11 PM</option>
                 </select>
             </td>
-        </tr>
+		</tr>
         <tr>
 			<td colspan="2">
 				<table cellpadding="0">
