@@ -6,7 +6,7 @@
 				extract($curannouncement);
 	?>
 	<article>
-		<?php if (!empty($curthumb)) { ?><img src="http://placehold.it/150x225/" alt="" class="right" /><?php } ?>
+		<?php if (!empty($curimage)) { ?><img src="http://placehold.it/150x225/" alt="" class="right" /><?php } ?>
 		<h2><?= htmlout($curtitle) ?> <span class="time"><?= date("m/d/y", $curdatestamp) ?></span></h2>
 		<p><?= htmlout($curdescription, true) ?></p>
 		<div class="extra">
