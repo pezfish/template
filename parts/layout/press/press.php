@@ -1,22 +1,42 @@
 <section id="press">
 	<h1>Press</h1>
+	<?
+		if (!empty($articles)) {
+			$delim = "";
+			foreach($articles as $article) {
+				extract($article);
+				
+				// Determine what kind of link to output.
+				$curlinkout = $curlink;
+				$curtarget = $curlinktarget;
+				$curlinktext = (!empty($curlinktitle) ? $curlinktitle : $defaultlinktitle);
+				if (!empty($curfullarticle)) {
+					$curlinkout = "press-detail.php?id=$curid";
+					$curtarget = "";
+					$curlinktext = "Read More";
+				} elseif (!empty($curpdf)) {
+					$curlinkout = "/" . $pdfdir . "/$curpdf";
+					$curlinktext = (!empty($curpdftitle) ? $curpdftitle : $defaultpdftitle);
+					$curtarget = "_blank";
+				}
+				
+	?>
 	<article>
-		<h2>Lorem ipsum dolor sit amet <span class="time">00/00/00</span></h2>
+		<?php if (!empty($curimage)) { ?><img src="http://placehold.it/150x225/" alt="" class="right" /><?php } ?>
+		<h2><?= htmlout($curtitle) ?> <span class="time"><?= date("m/d/y", $curdatestamp) ?></span></h2>
+		<?= (!empty($curintro) ? "<p>" . htmlout($curintro, true) . "</p>" : "") ?>
 		<div class="extra">
-			<p><a href="#" class="more">Download PDF</a></p>
+			<p><a href="<?= htmlout($curlinkout) ?>" target="<?= $curtarget ?>" class="more"><?= htmlout($curlinktext) ?></a></p>
 		</div>
 	</article>
+	<?
+			}
+		} else {
+	?>
 	<article>
-		<h2>Lorem ipsum dolor sit amet <span class="time">00/00/00</span></h2>
-		<div class="extra">
-			<p><a href="#" class="more">Visit Website</a></p>
-		</div>
+		<p>No press articles currently.</p>
 	</article>
-	<article>
-		<h2><?= htmlout($curtitle) ?> <span class="time">00/00/00</span></h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tempus tellus. Praesent eleifend vehicula imperdiet. Etiam aliquet molestie dui, eget sagittis est consectetur in. Duis eleifend facilisis viverra. Nulla egestas leo ut magna posuere posuere. Sed tempus accumsan tortor eu accumsan. Donec euismod cursus massa, et rutrum nisl ultrices sodales. Nulla pellentesque interdum placerat. Phasellus et metus facilisis neque volutpat sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas libero lorem, blandit sit amet sollicitudin a, lobortis non mauris. Mauris orci mauris, viverra in facilisis non, pretium a libero. Mauris pulvinar feugiat enim, at ultricies nulla volutpat eu. Sed sagittis fringilla nibh ut vehicula. </p>
-		<div class="extra">
-			<a href="#" class="more">Read More &raquo;</a>
-		</div>
-	</article>
+	<?php
+		}
+	?>
 </section>

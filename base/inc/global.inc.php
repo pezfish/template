@@ -9,6 +9,8 @@
 	$now = time();
 	
 	// Sample Content
+	
+	// announcements
 	$announcements = array();
 	for ($i = 0; $i < 10; $i++) {
 		$announcements[$i] = array(
@@ -24,4 +26,49 @@
 			"curpdftitle" => "",
 		);
 	}
+	
+	// press
+	$defaultlinktitle = "";
+	$defaultpdftitle = "";
+	$articles = array(
+		array(
+			"curid" => 1,
+			"curtitle" => "Lorem ipsum dolor sit amet",
+			"curdatestamp" => $now,
+			"curintro" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis placerat porta. Fusce porta mauris vitae libero vehicula pellentesque elementum erat ultricies.",
+			"curfullarticle" => "",
+			"curimage" => true,
+			"curlink" => "http://www.google.com/",
+			"curlinktitle" => "Search for Stuff",
+			"curlinktarget" => "_blank",
+			"curpdf" => "",
+			"curpdftitle" => "",
+		),
+		array(
+			"curid" => 2,
+			"curtitle" => "Lorem ipsum dolor sit amet",
+			"curdatestamp" => $now,
+			"curintro" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis placerat porta. Fusce porta mauris vitae libero vehicula pellentesque elementum erat ultricies.",
+			"curfullarticle" => "",
+			"curimage" => true,
+			"curlink" => "",
+			"curlinktitle" => "",
+			"curlinktarget" => "",
+			"curpdf" => "",
+			"curpdftitle" => "",
+		),
+		array(
+			"curid" => 3,
+			"curtitle" => "Lorem ipsum dolor sit amet",
+			"curdatestamp" => $now,
+			"curintro" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis placerat porta. Fusce porta mauris vitae libero vehicula pellentesque elementum erat ultricies.",
+			"curfullarticle" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis placerat porta. Fusce porta mauris vitae libero vehicula pellentesque elementum erat ultricies.",
+			"curimage" => true,
+			"curlink" => "",
+			"curlinktitle" => "",
+			"curlinktarget" => "",
+			"curpdf" => "",
+			"curpdftitle" => "",
+		),
+	);
 ?>

@@ -17,7 +17,11 @@
 	<?php
 			}
 		} else {
-			echo "None.";
+	?>
+	<article>
+		<p>No announcements currently.</p>
+	</article>
+	<?php
 		}
 	?>
 </section>
