@@ -5,7 +5,7 @@
 			foreach ($announcements as $curannouncement) {
 				extract($curannouncement);
 	?>
-	<article>
+	<article class="clearfix">
 		<?php if (!empty($curimage)) { ?><img src="http://placehold.it/150x225/" alt="" class="right" /><?php } ?>
 		<h2><?= htmlout($curtitle) ?> <span class="time"><?= date("m/d/y", $curdatestamp) ?></span></h2>
 		<p><?= htmlout($curdescription, true) ?></p>
