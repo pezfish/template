@@ -1,4 +1,4 @@
-<table cellspacing="0" cellpadding="0">
+<table class="calendar" cellspacing="0" cellpadding="0">
 	<caption><a href="#" title="previous month">&laquo;</a> March <a href="#" title="next month">&raquo;</a></caption>
 	<tr>
 		<th scope="col" abbr="Sunday" title="Sunday">S</th>
