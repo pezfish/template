@@ -1,1 +1,1 @@
-$("#gallery a").colorbox();
+$(".gallery a").colorbox();
