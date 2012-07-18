@@ -1,5 +1,6 @@
 <?php
-	require_once("inc/global.inc.php");
+	//require_once("inc/global.inc.php");
+	require_once("includes/global.inc.php");
 	
 	// page vars
 	$page_title = "";

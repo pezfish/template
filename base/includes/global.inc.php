@@ -1,6 +1,7 @@
 <?php
 	// empty function to avoid errors
 	function htmlout($str, $blah = false) {return $str;}
+	function getvar($thevar = "", $required = false) {return "";}
 	
 	// some settings
 	if (function_exists("date_default_timezone_set")) date_default_timezone_set("America/New_York");
@@ -70,5 +71,16 @@
 			"curpdf" => "",
 			"curpdftitle" => "",
 		),
+	);
+	
+	// photos
+	$albums = array(
+		array(
+			
+		),
+	);
+	
+	$photos = array(
+		
 	);
 ?>
