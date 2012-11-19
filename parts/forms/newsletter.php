@@ -13,9 +13,9 @@
             <td><input type="text" id="phone" name="phone" value="" /></td>
         </tr>
         <tr>
-            <td align="left"><label for="month">Birthday:</label></td>
+            <td align="left"><label for="bmonth">Birthday:</label></td>
             <td>
-				<select name="bmonth" id="month" style="width:150px;">
+				<select name="bmonth" id="bmonth" style="width:150px;">
                     <option value="0" selected="selected">Month</option>
                     <option value="1">January</option>
                     <option value="2">February</option>
@@ -30,10 +30,10 @@
                     <option value="11">November</option>
                     <option value="12">December</option>
             	</select>
-                <label for="day">Day:</label>
-                <input style="width:25px;" type="text" id="day" name="bday" value="" />
-                <label for="year">Year:</label>
-                <input style="width:40px;" type="text" id="year" name="byear" value="" />
+                <label for="bday">Day:</label>
+                <input style="width:25px;" type="text" id="bday" name="bday" value="" />
+                <label for="byear">Year:</label>
+                <input style="width:40px;" type="text" id="byear" name="byear" value="" />
             </td>
         </tr>        
         <tr>
