@@ -3,8 +3,11 @@
 	require_once("includes/global.inc.php");
 	
 	// page vars
-	$page_title = "";
-	$page_subtitle = "";
+	$page_meta = array(
+		"title" => "",
+		"keywords" => "",
+		"description" => ""
+	);
 	$page_section = "";
 	
 	include("includes/header.php");
@@ -18,11 +21,13 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title><?= (!empty($page_subtitle)) ? ($page_title." - ".$page_subtitle." - ") : ($page_title." - "); ?>SITE NAME</title>
+<title><?= isset($page_meta["title"]) ? $page_meta["title"] : "SITE NAME" ?></title>
+<meta name="keywords" content="<?= isset($page_meta["keywords"]) ? $page_meta["keywords"] : "" ?>">
+<meta name="description" content="<?= isset($page_meta["description"]) ? $page_meta["description"] : "" ?>">
 
-<meta name="description" content="" />
 <meta name="author" content="http://www.aycmedia.com" />
-<meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=1000" />
+
 <? /*
 <meta property="og:title" content="" />
 <meta property="og:description" content="" />
@@ -52,7 +57,7 @@
 */ ?>
 <? /*
 <!-- ::::::::::::::::::::::::::: JQUERY ::::::::::::::::::::::::::: -->
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 */ ?>
 <? /*
