@@ -41,7 +41,7 @@
             <td>
                 <select name="stime" id="stime" style="width:150px;">
                     <option value="">Start Time</option>                      			
-                    <?php
+					<?php
 						for ($i = 0; $i < 24; $i++) {
 							$time = date("g A", mktime($i, 0, 0, 1, 1, 2000));
 					?>
@@ -53,7 +53,7 @@
                 to
                 <select name="etime" id="etime" style="width:150px;">
                     <option value="">End Time</option>                      			
-                    <?php
+					<?php
 						for ($i = 0; $i < 24; $i++) {
 							$time = date("g A", mktime( $i, 0, 0, 1, 1, 2000));
 					?>
