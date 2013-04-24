@@ -83,4 +83,18 @@
 	$photos = array(
 		
 	);
+	
+	// Events
+	$events = array();
+	
+	// Menus
+	$menus = array();
+	for ($i = 1; $i <= 15; $i++) {
+		$menus[1][] = array(
+			"curid" => $i,
+			"curname" => "Title $i",
+			"curdescription" => "description $i",
+			"curprice" => number_format(mt_rand(1, 99), 2),
+		);
+	}
 ?>
