@@ -24,8 +24,7 @@
 <meta name="keywords" content="<?= !empty($page_meta["keywords"]) ? $page_meta["keywords"] : "" ?>">
 <meta name="description" content="<?= !empty($page_meta["description"]) ? $page_meta["description"] : "" ?>">
 
-<meta name="author" content="http://www.aycmedia.com" />
-<meta name="viewport" content="width=1000" />
+<meta name="viewport" content="width=device-width" />
 
 <? /*
 	<meta property="og:title" content="" />
